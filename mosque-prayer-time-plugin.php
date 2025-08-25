@@ -20,9 +20,9 @@ if (!defined('ABSPATH')) {
 }
 
 // Fixed version constant to match header
-define('ELC_VERSION', '2.0.0');
-define('ELC_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('ELC_PLUGIN_PATH', plugin_dir_path(__FILE__));
+define('MJT_VERSION', '2.0.0');
+define('MJT_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('MJT_PLUGIN_PATH', plugin_dir_path(__FILE__));
 
 require 'lib/plugin-update-checker-master/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
