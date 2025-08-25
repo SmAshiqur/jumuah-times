@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Jummah Times
- * Plugin URI: https://wordpress.org/plugins/masjid-jummah-times/
+ * Plugin URI: https://masjidsolutions.net/
  * Description: Beautiful Jummah prayer times display with Khateeb name and topic in an elegant card layout.
  * Version: 2.0.0
  * Requires at least: 6.4.1
@@ -11,7 +11,39 @@
  * License: GPLv2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: mjt
+ * GitHub Plugin URI: SmAshiqur/jumuah-times
  */
+
+
+if (!defined('ABSPATH')) {
+    exit;
+}
+
+// Fixed version constant to match header
+define('ELC_VERSION', '2.0.0');
+define('ELC_PLUGIN_URL', plugin_dir_url(__FILE__));
+define('ELC_PLUGIN_PATH', plugin_dir_path(__FILE__));
+
+require 'lib/plugin-update-checker-master/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$updateChecker = PucFactory::buildUpdateChecker(
+    'https://github.com/SmAshiqur/jumuah-times',
+    __FILE__,
+    'jumuah-times' 
+);
+
+// Set the branch (change to 'master' if that's your default branch)
+$updateChecker->setBranch('main');
+
+// Enable release assets if you plan to use GitHub releases
+$updateChecker->getVcsApi()->enableReleaseAssets();
+
+
+
+
+
+
 
 /**
  * Main Plugin Class
