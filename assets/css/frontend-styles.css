@@ -1,0 +1,348 @@
+
+/* Frontend Styles for Jummah Times Cards */
+
+/* Common Styles */
+.jummah-times-container {
+    max-width: 900px;
+    margin: 20px auto;
+    /* box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.jummah-times-error {
+    background: #fee;
+    color: #c33;
+    padding: 15px;
+    border-left: 4px solid #c33;
+    margin: 20px 0;
+    border-radius: 4px;
+}
+
+/* Modern Style */
+.jummah-times-container.modern {
+    background: linear-gradient(135deg, #ffffff, #fff);
+    /* border: 1px solid #e0e0e0; */
+}
+
+.modern .jummah-header {
+    background: #002855;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.modern .jummah-mosque-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.modern .jummah-date {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: bold;
+    color: #343434;
+    padding: 0 0 16px 0;
+    border-bottom: 1px solid #efefef;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+}
+.jummah-card .label {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.modern .jummah-title {
+    text-align: center;
+    font-size: 22px;
+    color: #002855;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.modern .jummah-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 4px;
+}
+
+.modern .jummah-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    max-width: 400px;
+    flex: 1;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.modern .jummah-card:hover {
+    transform: translateY(-5px);
+}
+
+.modern .jummah-number {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #002855;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.modern .jummah-time {
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #0e0e0e;
+    line-height: normal;
+    margin: 0 0 16px 0;
+}
+
+.modern .jummah-khateeb,
+.modern .jummah-topic {
+    margin: 10px 0;
+    font-size: 14px;
+    display: flex;
+    margin: 8px 0px;
+    padding: 0;
+}
+
+.modern .label {
+    color: #343434;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.modern .value {
+    color: #333;
+    font-weight: normal;
+}
+
+.modern .jummah-footer {
+    background: #f5f5f5;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    border-top: 1px solid #e0e0e0;
+}
+
+.modern .jummah-footer a {
+    color: #002855;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Classic Style */
+.jummah-times-container.classic {
+    /* background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding-bottom: 10px; */
+}
+
+.classic .jummah-header {
+    background: #4a6741;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.classic .jummah-header h2 {
+    margin: 0 0 5px;
+    font-size: 22px;
+    color: white;
+}
+
+.classic .jummah-date {
+    margin: 0;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.classic .jummah-title-bar {
+    background: #eaeaea;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+}
+
+.classic .jummah-cards-container {
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.classic .jummah-card {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    border-left: 4px solid #eaeaea;
+}
+
+.classic .jummah-time-badge {
+    background: #fff;
+    color: #000;
+    padding: 15px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    font-weight: bold;
+    font-size: 26px;
+    min-width: 100px;
+}
+
+.classic .jummah-details {
+    padding: 15px;
+    flex: 1;
+}
+
+.classic .jummah-khateeb,
+.classic .jummah-topic {
+    margin: 5px 0;
+    display: flex;
+}
+
+.classic .label {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.classic .jummah-footer {
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.classic .jummah-footer a {
+    color: #4a6741;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Minimal Style */
+.jummah-times-container.minimal {
+    /* background: white;
+    border: 1px solid #eee; */
+}
+
+.minimal .jummah-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.minimal .jummah-header h3 {
+    margin: 0 0 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+.minimal .jummah-date {
+    margin: 0;
+    font-size: 14px;
+    color: #888;
+}
+
+.minimal .jummah-title {
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+    font-weight: 500;
+}
+
+.minimal .jummah-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px 20px;
+}
+
+.minimal .jummah-card {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.minimal .jummah-time {
+    font-size: 26px;
+    font-weight: bold;
+    color: #222;
+}
+
+.minimal .jummah-separator {
+    width: 30px;
+    height: 2px;
+    background: #ddd;
+    margin: 10px auto;
+}
+
+.minimal .jummah-khateeb {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.minimal .jummah-topic {
+    font-style: italic;
+    color: #666;
+    font-size: 13px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .modern .jummah-cards-container {
+        flex-direction: column;
+    }
+    
+    .classic .jummah-card {
+        flex-direction: column;
+    }
+    
+    .classic .jummah-time-badge {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .minimal .jummah-cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+.jummah-number-top {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: normal;
+    font-weight: bold;
+    color: #0e0e0e;
+    margin-bottom: 12px;
+    text-align: left;
+}
+
+
+
+.jummah-times-container.minimal .jummah-number-top {
+    text-align: center;
+}
