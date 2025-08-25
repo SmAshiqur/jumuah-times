@@ -3,7 +3,7 @@
  * Plugin Name: Jummah Times
  * Plugin URI: https://masjidsolutions.net/
  * Description: Beautiful Jummah prayer times display with Khateeb name and topic in an elegant card layout.
- * Version: 2.0.0
+ * Version: 2.0.1
  * Requires at least: 6.4.1
  * Requires PHP: 7.2
  * Author: Masjid Solutions
